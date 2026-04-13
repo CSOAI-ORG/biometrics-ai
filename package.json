@@ -1,0 +1,40 @@
+{
+  "name": "@meok-global/biometrics-ai",
+  "version": "1.0.0",
+  "description": "CSOAI Biometrics & Identity AI Governance — facial recognition, emotion detection, EU AI Act prohibited/high-risk biometric AI, and BIPA compliance",
+  "author": "MEOK AI Labs — Cyber Security Global Alliance",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meok-global/mcp-servers.git",
+    "directory": "packages/biometrics-ai"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "biometrics-ai-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.3.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
